@@ -1,0 +1,4 @@
+#!/bin/bash
+# get project id given name
+
+gcloud projects list | grep $1 | awk '{print $1}'
